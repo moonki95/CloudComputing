@@ -1,5 +1,4 @@
-# CloudComputing
-클라우드컴퓨팅
+# CloudComputing  
 
 스크랩핑(scraping) : 데이터를 수집하는 행위  
 크롤링(Crawling) : 조직적 자동화된 방법으로 월드와이드웹을 탐색 하는 것  
@@ -8,7 +7,7 @@
 
 
 
-# 크롤링을 위한 기법들
+### 크롤링을 위한 기법들
 
 1. BeautifulSoup 라이브러리 사용  
    - BeautifulSoup 모듈은 HTML 및 XML을 파싱하는 데 사용되는 파이썬 라이브러리
