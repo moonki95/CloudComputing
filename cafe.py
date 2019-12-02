@@ -5,7 +5,7 @@ from urllib.parse import urljoin
 list_url = 'https://m.cafe.naver.com/ArticleAllListAjax.nhn'
 
 params = {
-    'search.clubid' : 'wjdalsrbekt',# id
+    'search.clubid' : '',# id
     'search.menuid': '1768',  # 가방/모자/장갑 게시판
     'search.boardtype': 'L',  #
     'search.questionTab': 'A',
