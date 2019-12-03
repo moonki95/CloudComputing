@@ -13,3 +13,14 @@ for tag in soup.select('#articleListArea li'):
     article_url = urljoin(list_url,tag.find('a')['href'])#맨 처음에 있는 a항목을 가져온다.
     article_title = tag.find(class_='tit').text.strip()
     print(article_title, article_url)
+    html2 = requests.get(article_url).text
+    article_soup = BeautifulSoup(html2, 'html.parser')
+
+    #어떤 물품들을 로그인을 해야지 상품 페이지에 접속하여 price를 가져올 수 있다.
+    #페이지 접속을 못 해 에러나는 상품들은 None으로 처리했다.
+
+    try:
+        price = article_soup.select('.product_name.price')[0].text
+    except IndexError:
+        price = None
+    print(price)
