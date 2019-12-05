@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div>
+            <form method="get"  action="{% url 'search:search_get' %}">
+                <input type="text" name="search">
+                 <input type="submit" value="Search">
+            </form>
+    </div>
+    <div>
+        {% for list in search_list %}
+            {{ list.name }}{{ list.price }}{{ list.place }}{{ list.del_price }}<br>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
