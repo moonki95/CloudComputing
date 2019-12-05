@@ -12,9 +12,23 @@
                  <input type="submit" value="Search">
             </form>
     </div>
-    <div>
+    <div style="display:inline;">
         {% for list in search_list %}
-            {{ list.name }}{{ list.price }}{{ list.place }}{{ list.del_price }}<br>
+            <table border="1" bordercolor="black" style=" margin : 30px; display: inline-block; width:300px; table-layout: fixed;">
+                <tr>
+                    <td colspan="2" height="300" style="display: inline-block;  width:290px; height:290px;">사진</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style = "text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display: inline-block;  width:290px;"><a href="{{list.url}}">{{ list.name }}</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="display: inline-block;  width:290px;">{{ list.price }}원</td>
+                </tr>
+                <tr>
+                    <td style="display: inline-block;  width:290px;">{{ list.place }}</td>
+                    <td style="display: inline-block;  width:290px;">{{ list.del_price }}</td>
+                </tr>
+            </table>
         {% endfor %}
     </div>
 
