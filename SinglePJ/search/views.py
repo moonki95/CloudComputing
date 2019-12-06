@@ -45,10 +45,35 @@ def check_get(request):
     for n, p, dp, l in zip(name, price, del_p, link_p):
         slist = SearchList()
         slist.name = n.get_text()
-        slist.price = p.get_text()
+        slist.price = p.get_text() + "원"
         slist.del_price = dp
         slist.url = l
         slist.site = "G마켓"
+        slist.save()
+
+    response = requests.get('https://www.daangn.com/search/'+sc)
+    html = response.text
+    bsobj = BeautifulSoup(html, "html.parser")
+
+    cont = bsobj.find("div", {"class":"result-container"})
+    namelist = cont.findAll("span", {"class": "article-title"})
+    addresslist = cont.findAll("p", {"class": "article-region-name"})
+    pricelist = cont.findAll("p", {"class": "article-price"})
+    url = cont.find_all("a", {"class": "flea-market-article-link"})
+    link_car = []
+
+    for lk in url:
+        if 'href' in lk.attrs:
+            link_car.append(lk.attrs['href'])
+
+
+    for i, j, k, l in zip(namelist, addresslist, pricelist, link_car):
+        slist = SearchList()
+        slist.name = i.get_text()
+        slist.place = j.get_text()
+        slist.price = k.get_text()
+        slist.url = "https://www.daangn.com/" + l
+        slist.site = "당근마켓"
         slist.save()
 
     return render(request, template_name,{"search_list": search_list})
