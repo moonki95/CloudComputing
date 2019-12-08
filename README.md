@@ -1,6 +1,7 @@
 # 작동하기 위해서
   - 네이버 아이디, 비밀번호가 있어야 하며 중고나라 사이트에 가입이 되어있어야 함
   - chromedriver를 설치 및 경로지정 필요
+  - python3, BeautifulSoup4, Selenium 라이브러리 설치가 
 
 
 
