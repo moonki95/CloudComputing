@@ -18,5 +18,6 @@ driver.get(url)
 sleep(5)
 
 h1 = driver.find_element_by_css_selector("#articleList > ul > li:nth-child(1) > a").click()
+sleep(5)
 selected_class=driver.find_element_by_class_name('price').text
 print(selected_class)
