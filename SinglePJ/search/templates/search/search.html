@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div>
+            <form method="get"  action="{% url 'search:search_get' %}">
+                <input type="text" name="search">
+                 <input type="submit" value="Search">
+            </form>
+    </div>
+    <div style="display:inline;">
+        {{msg}}
+        {% for a,b,c,d,e,f in text %}
+                    <table border="1" bordercolor="black" style=" margin : 30px; display: inline-block; width:300px; table-layout: fixed;">
+                <tr>
+                    <td colspan="2" style="display: inline-block;  width:290px;">{{ f }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="display: inline-block;  width:290px; height:290px;">사진</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style = "text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display: inline-block;  width:290px;"><a href="{{ e }}">{{ a }}</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="display: inline-block;  width:290px;">{{ b }}</td>
+                </tr>
+                <tr>
+                    <td style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display: inline-block;  width:290px;">{{ c }}</td>
+                    <td style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display: inline-block;  width:290px;">{{ d }}</td>
+                </tr>
+            </table>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

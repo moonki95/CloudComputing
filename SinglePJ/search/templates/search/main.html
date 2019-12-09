@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+    <div align = "center">
+        <h1>돌아온 싱글</h1>
+        <div>
+            <form method="get"  action="{% url 'search:search_get' %}">
+                <input type="text" name="search">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
