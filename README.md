@@ -18,13 +18,13 @@
     (1) BeautifulSoup 라이브러리 사용
     - BeautifulSoup 모듈은 HTML 및 XML을 파싱하는 데 사용되는 파이썬 라이브러리
     (2) Selenium 이용한 크롤링
-    - BeautifulSoup은 사용자 행동을 특정해서 데이터를 가져올 수 없어서, 사용자의 행동을 동적으로 추가하려       면 selenium이 필요
+    - BeautifulSoup은 사용자 행동을 특정해서 데이터를 가져올 수 없어서, 사용자의 행동을 동적으로 추가하려면 selenium이 필요
     - 한마디로 브라우저에서의 액션을 테스트 할 수 있게 해주는 테스팅 도구
 
 # 2. 사용법
 
  ### 사이트 주소 
-    54.152.209.23
+    http://54.152.209.23:8000/
     
  ### 검색창에 원하는 물품을 사용자가 입력하여 검색을 한다.
  
@@ -32,7 +32,8 @@
 # 3. 설치
 
 ### 셀리니움 설치
-```sudo apt-get install python3-pip
+```py
+sudo apt-get install python3-pip
 
 pip3 install selenium
 
@@ -54,19 +55,19 @@ sudo mv -f chromedriver /usr/local/share/chromedriver
 
 sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 
-sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver```
-
-
-  ### django 설치
-     ``` pip3 intsall djgango
-    
+sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver```  
+  
+### django 설치
+    ```py
+      pip3 intsall djgango
+      
       (manage.py가 있는 프로젝트 설치 된 경로로 이동)
     
-      python3 manage.py runserver0.0.0.0:8000```
+      python3 manage.py runserver0.0.0.0:8000
+    ```
     
-  ### bs4 설치
-      pip3 install bs4
-
-
-# 4. 주의할점 
+### bs4 설치
+      ```py pip3 install bs4```  
+       
+# 4.주의할 점
     - 실시간으로 검색을 하여 검색이 느립니다.
