@@ -59,18 +59,16 @@ sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 ```
   
 ### django 설치
-    ```python
-    pip3 intsall djgango
-      
-    (manage.py가 있는 프로젝트 설치 된 경로로 이동)
-    
-    python3 manage.py runserver0.0.0.0:8000
-    ```
+```python
+pip3 intsall djgango
+(manage.py가 있는 프로젝트 설치 된 경로로 이동)
+python3 manage.py runserver0.0.0.0:8000
+```
     
 ### bs4 설치
-      ```python
-      pip3 install bs4
-      ```
+```python
+pip3 install bs4
+```
        
 # 4.주의할 점
     - 실시간으로 검색을 하여 검색이 느립니다.
