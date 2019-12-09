@@ -27,8 +27,11 @@
     http://54.152.209.23:8000/
     
  ### 검색창에 원하는 물품을 사용자가 입력하여 검색을 한다.
-![5](https://user-images.githubusercontent.com/47201943/70450495-2a706d00-1ae7-11ea-96b3-c74465fb0c81.png)
-
+![1](https://user-images.githubusercontent.com/47201943/70450955-ecc01400-1ae7-11ea-919a-05f5dd793bda.jpg)
+ ### 검색결과
+ ![2](https://user-images.githubusercontent.com/47201943/70450952-ecc01400-1ae7-11ea-9d10-95481651f060.jpg)
+ ### 검색결과가 없을시, 출력결과
+![3](https://user-images.githubusercontent.com/47201943/70450954-ecc01400-1ae7-11ea-95a4-d378d3c5261a.jpg)
 
 # 3. 설치
 
