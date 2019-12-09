@@ -27,9 +27,9 @@
     http://54.152.209.23:8000/
     
  ### 검색창에 원하는 물품을 사용자가 입력하여 검색을 한다.
- ![first_page].(C:\Users\정민규PC\Documents\Desktop.1.jpg)
- ![second_page].(C:\Users\정민규PC\Documents\Desktop.2.jpg)
- ![third_page].(C:\Users\정민규PC\Documents\Desktop.3.jpg)
+ ![first_page].(./images/1.jpg)
+ ![second_page].(./images/2.jpg)
+ ![third_page].(./images/3.jpg)
  
 # 3. 설치
 
