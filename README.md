@@ -42,10 +42,10 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
 sudo apt install google-chrome-stable
-//오류시 apt-get update 혹은 apt-get install --fix-broken && apt-get update && apt-get upgrade
+#오류시 apt-get update 혹은 apt-get install --fix-broken && apt-get update && apt-get upgrade
 
 google-chrome --version
-//크롬 버전 확인후 크롬 드라이버 다운로드
+#크롬 버전 확인후 크롬 드라이버 다운로드
 
 unzip chromedriver_linux64.zip
 
