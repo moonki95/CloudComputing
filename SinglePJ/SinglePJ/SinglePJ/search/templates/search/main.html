@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<style>
+    @font-face {
+        font-family:binggrae;
+        src: url(static/font/Binggrae.ttf) format('truetype');
+    }
+    body
+    {
+        font-family:"binggrae";
+    }
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+    <div align = "center" style="position:absolute; top:40%; left:40%; width:600px; height:500px; overflow:hidden; margin-top:-150px; margin-left:-100px;">
+        <img src = "static/img/logo.png">
+        <div>
+            <form method="get"  action="{% url 'search:search_get' %}">
+                <input type="text" name="search" style="width:500px; height:30px; border:1 solid gray; border-radius : 40px/40px; box-shadow: 0px 0px 3px #555; font-size:18px;">
+                <input type="image" src = "static/img/search.png" name="submit" value="submit" style="width:30px; height:30px;" align="absmiddle">
+            </form>
+        </div>
+        <p align="center" style="color:#BBB;">검색에 시간이 조금 소요됩니다.</p>
+    </div>
+
+</body>
+</html>

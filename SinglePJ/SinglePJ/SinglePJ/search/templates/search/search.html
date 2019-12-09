@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<style>
+    @font-face {
+        font-family:binggrae;
+        src: url(static/font/Binggrae.ttf) format('truetype');
+    }
+    a:link { color: red; text-decoration: none;}
+    body
+    {
+        font-family:"binggrae";
+    }
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div align = "center">
+        <img src = "static/img/logo.png" style="width:198px; height:89px;">
+        <form method="get"  action="{% url 'search:search_get' %}">
+            <input type="text" name="search" style="width:300px; height:25px; border:1 solid gray; border-radius : 40px/40px; box-shadow: 0px 0px 5px #555;">
+            <input type="image" src = "static/img/search.png" name="submit" value="Search" style="width:26px; height:26px;" align="absmiddle">
+        </form>
+    </div>
+    <hr size="2">
+    <div style="display:inline;">
+        {{msg}}
+        {% for a,b,c,d,e,f,g in text %}
+            <table border="1" bordercolor="#AAA" style=" margin : 30px; display: inline-block; width:300px; table-layout: fixed;">
+                <tr>
+                    <td colspan="2" style="display: inline-block;  width:290px; font-size:20px;" align="center"><b>{{ f }}</b></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="display: inline-block;  width:290px; height:290px;"><a href="{{ e }}"><img src="{{g}}" width = "290" height= "290"></a></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style = "text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display: inline-block;  width:290px;" align="center"><a href="{{ e }}"style = "text-decoration:none">{{ a }}</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="display: inline-block;  width:290px;" align="center">{{ b }}</td>
+                </tr>
+                <tr>
+                    <td style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display: inline-block;  width:290px;" align="center">{{ c }}</td>
+                    <td style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display: inline-block;  width:290px;" align="center">{{ d }}</td>
+                </tr>
+            </table>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
