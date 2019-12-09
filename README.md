@@ -32,7 +32,7 @@
 # 3. 설치
 
 ### 셀리니움 설치
-```py
+```python
 sudo apt-get install python3-pip
 
 pip3 install selenium
@@ -55,19 +55,22 @@ sudo mv -f chromedriver /usr/local/share/chromedriver
 
 sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 
-sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver```  
+sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+```
   
 ### django 설치
-    ```py
-      pip3 intsall djgango
+    ```python
+    pip3 intsall djgango
       
-      (manage.py가 있는 프로젝트 설치 된 경로로 이동)
+    (manage.py가 있는 프로젝트 설치 된 경로로 이동)
     
-      python3 manage.py runserver0.0.0.0:8000
+    python3 manage.py runserver0.0.0.0:8000
     ```
     
 ### bs4 설치
-      ```py pip3 install bs4```  
+      ```python
+      pip3 install bs4
+      ```
        
 # 4.주의할 점
     - 실시간으로 검색을 하여 검색이 느립니다.
