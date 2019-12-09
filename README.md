@@ -44,7 +44,7 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 sudo apt install google-chrome-stable
 #오류시 apt-get update 혹은 apt-get install --fix-broken && apt-get update && apt-get upgrade
 
-google-chrome --version
+#google-chrome --version
 #크롬 버전 확인후 크롬 드라이버 다운로드
 
 unzip chromedriver_linux64.zip
